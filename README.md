@@ -59,8 +59,8 @@ O ATT é 150 nos dois cenários. O que muda é o viés: perto de zero quando o t
 
 ## O grafo causal
 
-![Cenário A](..\figs\grafo_cenario_a.png)
-![Cenário B](..\figs\grafo_cenario_b.png)
+![Cenário A](figs/grafo_cenario_a.png)
+![Cenário B](figs/grafo_cenario_b.png)
 
 No cenário A, nenhuma seta chega em T: a atribuição é aleatória e não existe confounder. No cenário B aparece a seta `Score → T`. Como o score também causa o gasto, ele é um confounder, e abre uma porta dos fundos entre T e Y que passa por `Score` e, indiretamente, por `Renda`.
 
@@ -90,8 +90,8 @@ Depois dos resultados acima, surge a tentação de controlar por todas as variá
 
 O coeficiente de T se afasta de 150 nos dois cenários.
 
-![Cenário B com utilização](../figs/cenario_a_collider.png)
-![Cenário B com utilização](../figs/cenario_b_collider.png)
+![Cenário B com utilização](figs/cenario_a_collider.png)
+![Cenário B com utilização](figs/cenario_b_collider.png)
 
 A utilização é um collider: é consequência do tratamento (que muda o limite) e do resultado (o gasto). Condicionar nela cria uma associação entre T e os resultados potenciais que não existia. A conta mostra isso: para dois clientes com a mesma utilização e o mesmo limite base, o tratado precisa de um `y0` maior para chegar à mesma utilização, porque o denominador dele é 50% maior.
 
